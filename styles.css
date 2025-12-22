@@ -26,8 +26,7 @@ body {
 h1, h2, h3 {
   color: var(--gray-light);
 }
-p {
-  color: var(--gray-medium);
+
 }
 
 /* NAVBAR */
@@ -77,12 +76,12 @@ p {
 }
 
 .nav-links a:hover {
-  color: #facc15;
+  color: var(--mp-accent);
 }
 
 .nav-cta {
   border-radius: 999px;
-  border: 1px solid #facc15;
+  border: 1px solid var(--mp-border);
 }
 
 /* HERO */
@@ -435,5 +434,110 @@ p {
 .navbar .logo-pro{
   position: relative !important;
   top: 1px !important; /* baja apenas la pill */
+}
+/* =========================
+   PATCH - Paleta legible + botones pro (sin amarillo)
+   Pegarlo AL FINAL del styles.css
+========================= */
+
+:root{
+  --mp-bg: #060b18;          /* navy casi negro */
+  --mp-hero-1: #0b1c3d;      /* navy */
+  --mp-hero-2: #1e3a8a;      /* azul */
+  --mp-text: #e5e7eb;        /* texto principal (muy legible) */
+  --mp-muted: #a7b0c0;       /* texto secundario */
+  --mp-border: rgba(255,255,255,.18);
+  --mp-accent: #2f6bff;      /* azul acento (reemplaza amarillo) */
+  --mp-accent-2:#1d4ed8;
+}
+
+/* Fondo general */
+body{
+  background: var(--mp-bg);
+  color: var(--mp-text);
+}
+
+/* Hero (arriba) */
+.hero{
+  background: radial-gradient(900px 400px at 20% 20%, rgba(47,107,255,.18), transparent 60%),
+              linear-gradient(90deg, var(--mp-hero-2), var(--mp-hero-1));
+}
+
+/* Titulares: claros y fuertes */
+h1, h2, h3{
+  color: var(--mp-text);
+}
+
+/* Textos: legibles */
+.hero p, .hero .subtitle, .hero .lead{
+  color: var(--mp-text);
+  opacity: .92;
+}
+section p, .section p, .content p{
+  color: var(--mp-muted);
+}
+
+/* Links/hover del menú (sin amarillo) */
+.navbar a, .nav-links a{
+  color: var(--mp-text);
+  opacity: .9;
+  text-decoration: none;
+}
+.navbar a:hover, .nav-links a:hover{
+  color: var(--mp-accent);
+  opacity: 1;
+}
+
+/* Botón de la derecha "Descargar app" (sin borde amarillo) */
+.navbar .btn, .navbar .cta, .navbar .btn-download, .nav-cta{
+  border: 1px solid var(--mp-border) !important;
+  color: var(--mp-text) !important;
+  background: rgba(255,255,255,.04) !important;
+}
+.navbar .btn:hover, .navbar .cta:hover, .navbar .btn-download:hover, .nav-cta:hover{
+  border-color: rgba(47,107,255,.55) !important;
+  box-shadow: 0 10px 24px rgba(47,107,255,.18);
+}
+
+/* Botones principales del hero (Quiero la app / Soy profesional) */
+.btn-primary{
+  background: var(--mp-accent) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+}
+.btn-primary:hover{
+  background: var(--mp-accent-2) !important;
+}
+
+.btn-secondary, .btn-outline{
+  background: transparent !important;
+  color: var(--mp-text) !important;
+  border: 1px solid var(--mp-border) !important;
+}
+.btn-secondary:hover, .btn-outline:hover{
+  border-color: rgba(47,107,255,.55) !important;
+  box-shadow: 0 10px 24px rgba(47,107,255,.18);
+}
+
+/* Cards de secciones claras (para que abajo no quede feo) */
+.section-light, .light, .gray, .features{
+  background: #f5f7fb;
+  color: #0f172a;
+}
+.section-light h2, .light h2, .gray h2, .features h2{
+  color: #0f172a;
+}
+.section-light p, .light p, .gray p, .features p{
+  color: #334155;
+}
+
+/* Inputs del formulario */
+input, select, textarea{
+  color: var(--mp-text);
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--mp-border);
+}
+input::placeholder, textarea::placeholder{
+  color: rgba(229,231,235,.55);
 }
 
