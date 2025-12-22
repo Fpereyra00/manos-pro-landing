@@ -380,3 +380,25 @@ body {
   font-size: 0.72em !important;
   line-height: 1 !important;
 }
+/* LOGO TEXT */
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* controla separación Manos / PRO */
+  font-weight: 700;
+  color: #ffffff; /* asegura que Manos se vea */
+}
+
+/* PRO badge */
+.logo-pro {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  color: #ffffff;
+  background: transparent;
+  font-weight: 800;
+  font-size: 0.7em;
+  letter-spacing: 0.08em; /* más prolijo */
+  line-height: 1;
+}
