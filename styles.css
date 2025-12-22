@@ -380,3 +380,4 @@ body {
   font-size: 0.72em !important;
   line-height: 1 !important;
 }
+body { outline: 3px solid red; }
