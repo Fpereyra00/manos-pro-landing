@@ -347,31 +347,32 @@ body {
     padding-top: 3.5rem;
   }
 }
-/* ===== LOGO (gris + pro integrado) ===== */
-.logo .logo-text {
+/* ===== Logo final (misma tipografía MANOS / PRO) ===== */
+.navbar .logo-text{
   display: inline-flex !important;
-  align-items: center !important;
+  align-items: baseline !important;
   gap: 6px !important;
-  color: #cbd5e1 !important;        /* gris claro */
+  font-size: 1.05rem !important;   /* tamaño base del logo */
   font-weight: 700 !important;
-  line-height: 1 !important;
+  color: #cbd5e1 !important;       /* gris claro */
 }
 
-.logo .logo-pro {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+.navbar .logo-pro{
+  display: inline-block !important;
+  vertical-align: baseline !important;
+
+  font-size: 1em !important;       /* MISMO tamaño que MANOS */
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+
   padding: 4px 10px !important;
-  border: 2px solid rgba(203, 213, 225, 0.9) !important; /* borde gris claro */
+  border: 2px solid #e5e7eb !important; /* blanco/gris suave */
   border-radius: 10px !important;
-  color: #cbd5e1 !important;        /* MISMO gris que "Manos" */
+
+  color: #e5e7eb !important;
   background: transparent !important;
-  font-weight: 800 !important;
-  font-size: 0.72em !important;
-  letter-spacing: 0.10em !important;
-  line-height: 1 !important;
-  transform: translateY(-1px) !important;
 }
+
 /* ===== FIX alineación logo en navbar ===== */
 .navbar .logo {
   display: flex !important;
