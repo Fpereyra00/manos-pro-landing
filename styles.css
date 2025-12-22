@@ -372,4 +372,23 @@ body {
   line-height: 1 !important;
   transform: translateY(-1px) !important;
 }
+/* ===== FIX alineación logo en navbar ===== */
+.navbar .logo {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar .logo-text {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  line-height: 1 !important;
+}
+
+/* Alinea la pill exactamente con el texto */
+.navbar .logo-pro {
+  position: relative !important;
+  top: 0 !important;
+  transform: none !important; /* quita el translateY */
+}
 
