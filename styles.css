@@ -355,11 +355,12 @@ body {
 }
 
 .logo-pro {
-  margin-left: 6px;
-  padding: 2px 8px;
-  font-size: 0.75em;
+  margin-left: 8px;
+  padding: 3px 9px;
+  font-size: 0.7em;
   font-weight: 700;
-  border: 1.5px solid #334155; /* gris oscuro */
-  border-radius: 6px;
-  color: #334155;
+  border: 1.8px solid #cbd5e1; /* gris claro visible en fondo oscuro */
+  border-radius: 7px;
+  color: #e5e7eb; /* texto claro */
+  letter-spacing: 0.08em;
 }
