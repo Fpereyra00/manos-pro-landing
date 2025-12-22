@@ -364,3 +364,19 @@ body {
   color: #e5e7eb; /* texto claro */
   letter-spacing: 0.08em;
 }
+/* FORCE logo PRO badge */
+.logo .logo-pro,
+.navbar .logo-pro,
+.logo-pro {
+  display: inline-block !important;
+  margin-left: 10px !important;
+  padding: 3px 10px !important;
+  border: 2px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  letter-spacing: 0.10em !important;
+  font-weight: 800 !important;
+  font-size: 0.72em !important;
+  line-height: 1 !important;
+}
