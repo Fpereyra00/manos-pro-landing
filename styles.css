@@ -347,3 +347,19 @@ body {
     padding-top: 3.5rem;
   }
 }
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0f172a; /* azul oscuro */
+  letter-spacing: 0.02em;
+}
+
+.logo-pro {
+  margin-left: 6px;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 700;
+  border: 1.5px solid #334155; /* gris oscuro */
+  border-radius: 6px;
+  color: #334155;
+}
