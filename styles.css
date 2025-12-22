@@ -409,4 +409,8 @@ body {
   /* si tenías height/line-height fijo antes, lo anulamos */
   height: auto !important;
 }
+.navbar .logo-pro{
+  position: relative !important;
+  top: 1px !important; /* baja apenas la pill */
+}
 
