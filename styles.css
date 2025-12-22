@@ -347,58 +347,29 @@ body {
     padding-top: 3.5rem;
   }
 }
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #0f172a; /* azul oscuro */
-  letter-spacing: 0.02em;
-}
-
-.logo-pro {
-  margin-left: 8px;
-  padding: 3px 9px;
-  font-size: 0.7em;
-  font-weight: 700;
-  border: 1.8px solid #cbd5e1; /* gris claro visible en fondo oscuro */
-  border-radius: 7px;
-  color: #e5e7eb; /* texto claro */
-  letter-spacing: 0.08em;
-}
-/* FORCE logo PRO badge */
-.logo .logo-pro,
-.navbar .logo-pro,
-.logo-pro {
-  display: inline-block !important;
-  margin-left: 10px !important;
-  padding: 3px 10px !important;
-  border: 2px solid #e5e7eb !important;
-  border-radius: 8px !important;
-  color: #ffffff !important;
-  background: transparent !important;
-  letter-spacing: 0.10em !important;
-  font-weight: 800 !important;
-  font-size: 0.72em !important;
+/* ===== LOGO (gris + pro integrado) ===== */
+.logo .logo-text {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #cbd5e1 !important;        /* gris claro */
+  font-weight: 700 !important;
   line-height: 1 !important;
 }
-/* LOGO TEXT */
-.logo-text {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* controla separación Manos / PRO */
-  font-weight: 700;
-  color: #ffffff; /* asegura que Manos se vea */
+
+.logo .logo-pro {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 4px 10px !important;
+  border: 2px solid rgba(203, 213, 225, 0.9) !important; /* borde gris claro */
+  border-radius: 10px !important;
+  color: #cbd5e1 !important;        /* MISMO gris que "Manos" */
+  background: transparent !important;
+  font-weight: 800 !important;
+  font-size: 0.72em !important;
+  letter-spacing: 0.10em !important;
+  line-height: 1 !important;
+  transform: translateY(-1px) !important;
 }
 
-/* PRO badge */
-.logo-pro {
-  display: inline-block;
-  padding: 3px 10px;
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
-  color: #ffffff;
-  background: transparent;
-  font-weight: 800;
-  font-size: 0.7em;
-  letter-spacing: 0.08em; /* más prolijo */
-  line-height: 1;
-}
