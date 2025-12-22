@@ -391,4 +391,22 @@ body {
   top: 0 !important;
   transform: none !important; /* quita el translateY */
 }
+/* ===== Baseline: MANOS y PRO alineados como texto ===== */
+.navbar .logo-text{
+  display: inline-block !important;
+  line-height: 1 !important;
+}
+
+.navbar .logo-pro{
+  display: inline-block !important;     /* no flex */
+  vertical-align: baseline !important;  /* alinea PRO con MANOS */
+  line-height: 1 !important;            /* texto sin “subida/bajada” rara */
+
+  /* pill */
+  padding: 4px 10px !important;
+  border-radius: 10px !important;
+
+  /* si tenías height/line-height fijo antes, lo anulamos */
+  height: auto !important;
+}
 
