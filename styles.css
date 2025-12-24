@@ -1,20 +1,8 @@
-:root {
-  --blue-primary: #0b1c3d;    /* fondo principal */
-  --blue-secondary: #1e40af; /* gradientes / hero */
-  --gray-light: #cbd5e1;     /* títulos / logo */
-  --gray-medium: #94a3b8;    /* texto descriptivo */
-  --white-soft: #e5e7eb;     /* bordes / cards */
-}
-
 /* Reset básico */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-body {
-  background-color: var(--blue-primary);
-  color: var(--gray-medium);
 }
 
 body {
@@ -22,11 +10,6 @@ body {
   background: #f3f4f6; /* gris claro */
   color: #111827;      /* gris oscuro */
   line-height: 1.5;
-}
-h1, h2, h3 {
-  color: var(--gray-light);
-}
-
 }
 
 /* NAVBAR */
@@ -76,21 +59,19 @@ h1, h2, h3 {
 }
 
 .nav-links a:hover {
-  color: var(--mp-accent);
+  color: #facc15;
 }
 
 .nav-cta {
   border-radius: 999px;
-  border: 1px solid var(--mp-border);
+  border: 1px solid #facc15;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(
-    90deg,
-    var(--blue-secondary),
-    var(--blue-primary)
-  );
+  background: radial-gradient(circle at top left, #1d4ed8, #020617 55%);
+  color: #f9fafb;
+  padding: 4rem 1.5rem 3rem;
 }
 
 .hero-content {
@@ -128,8 +109,6 @@ h1, h2, h3 {
   color: #cbd5f5;
 }
 
-}
-
 /* BOTONES */
 .btn-primary,
 .btn-secondary {
@@ -147,8 +126,8 @@ h1, h2, h3 {
 }
 
 .btn-primary {
-  background-color: var(--blue-secondary);
-  color: #ffffff;
+  background: #facc15;
+  color: #111827;
 }
 
 .btn-primary:hover {
@@ -368,176 +347,3 @@ h1, h2, h3 {
     padding-top: 3.5rem;
   }
 }
-/* ===== Logo final (misma tipografía MANOS / PRO) ===== */
-.navbar .logo-text{
-  display: inline-flex !important;
-  align-items: baseline !important;
-  gap: 6px !important;
-  font-size: 1.05rem !important;   /* tamaño base del logo */
-  font-weight: 700 !important;
-  color: #cbd5e1 !important;       /* gris claro */
-}
-
-.navbar .logo-pro{
-  display: inline-block !important;
-  vertical-align: baseline !important;
-
-  font-size: 0.92em !important;       /* MISMO tamaño que MANOS */
-  font-weight: 700 !important;
-  letter-spacing: 0.08em !important;
-
-  padding: 4px 10px !important;
-  border: 2px solid #e5e7eb !important; /* blanco/gris suave */
-  border-radius: 10px !important;
-
-  color: #e5e7eb !important;
-  background: transparent !important;
-}
-
-/* ===== FIX alineación logo en navbar ===== */
-.navbar .logo {
-  display: flex !important;
-  align-items: center !important;
-}
-
-.navbar .logo-text {
-  display: flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  line-height: 1 !important;
-}
-
-/* Alinea la pill exactamente con el texto */
-.navbar .logo-pro {
-  position: relative !important;
-  top: 0 !important;
-  transform: none !important; /* quita el translateY */
-}
-/* ===== Baseline: MANOS y PRO alineados como texto ===== */
-.navbar .logo-text{
-  display: inline-block !important;
-  line-height: 1 !important;
-}
-
-.navbar .logo-pro{
-  display: inline-block !important;     /* no flex */
-  vertical-align: baseline !important;  /* alinea PRO con MANOS */
-  line-height: 1 !important;            /* texto sin “subida/bajada” rara */
-
-  /* pill */
-  padding: 4px 10px !important;
-  border-radius: 10px !important;
-
-  /* si tenías height/line-height fijo antes, lo anulamos */
-  height: auto !important;
-}
-.navbar .logo-pro{
-  position: relative !important;
-  top: 1px !important; /* baja apenas la pill */
-}
-/* =========================
-   PATCH - Paleta legible + botones pro (sin amarillo)
-   Pegarlo AL FINAL del styles.css
-========================= */
-
-:root{
-  --mp-bg: #060b18;          /* navy casi negro */
-  --mp-hero-1: #0b1c3d;      /* navy */
-  --mp-hero-2: #1e3a8a;      /* azul */
-  --mp-text: #e5e7eb;        /* texto principal (muy legible) */
-  --mp-muted: #a7b0c0;       /* texto secundario */
-  --mp-border: rgba(255,255,255,.18);
-  --mp-accent: #2f6bff;      /* azul acento (reemplaza amarillo) */
-  --mp-accent-2:#1d4ed8;
-}
-
-/* Fondo general */
-body{
-  background: var(--mp-bg);
-  color: var(--mp-text);
-}
-
-/* Hero (arriba) */
-.hero{
-  background: radial-gradient(900px 400px at 20% 20%, rgba(47,107,255,.18), transparent 60%),
-              linear-gradient(90deg, var(--mp-hero-2), var(--mp-hero-1));
-}
-
-/* Titulares: claros y fuertes */
-h1, h2, h3{
-  color: var(--mp-text);
-}
-
-/* Textos: legibles */
-.hero p, .hero .subtitle, .hero .lead{
-  color: var(--mp-text);
-  opacity: .92;
-}
-section p, .section p, .content p{
-  color: var(--mp-muted);
-}
-
-/* Links/hover del menú (sin amarillo) */
-.navbar a, .nav-links a{
-  color: var(--mp-text);
-  opacity: .9;
-  text-decoration: none;
-}
-.navbar a:hover, .nav-links a:hover{
-  color: var(--mp-accent);
-  opacity: 1;
-}
-
-/* Botón de la derecha "Descargar app" (sin borde amarillo) */
-.navbar .btn, .navbar .cta, .navbar .btn-download, .nav-cta{
-  border: 1px solid var(--mp-border) !important;
-  color: var(--mp-text) !important;
-  background: rgba(255,255,255,.04) !important;
-}
-.navbar .btn:hover, .navbar .cta:hover, .navbar .btn-download:hover, .nav-cta:hover{
-  border-color: rgba(47,107,255,.55) !important;
-  box-shadow: 0 10px 24px rgba(47,107,255,.18);
-}
-
-/* Botones principales del hero (Quiero la app / Soy profesional) */
-.btn-primary{
-  background: var(--mp-accent) !important;
-  color: #fff !important;
-  border: 1px solid rgba(255,255,255,.08) !important;
-}
-.btn-primary:hover{
-  background: var(--mp-accent-2) !important;
-}
-
-.btn-secondary, .btn-outline{
-  background: transparent !important;
-  color: var(--mp-text) !important;
-  border: 1px solid var(--mp-border) !important;
-}
-.btn-secondary:hover, .btn-outline:hover{
-  border-color: rgba(47,107,255,.55) !important;
-  box-shadow: 0 10px 24px rgba(47,107,255,.18);
-}
-
-/* Cards de secciones claras (para que abajo no quede feo) */
-.section-light, .light, .gray, .features{
-  background: #f5f7fb;
-  color: #0f172a;
-}
-.section-light h2, .light h2, .gray h2, .features h2{
-  color: #0f172a;
-}
-.section-light p, .light p, .gray p, .features p{
-  color: #334155;
-}
-
-/* Inputs del formulario */
-input, select, textarea{
-  color: var(--mp-text);
-  background: rgba(255,255,255,.03);
-  border: 1px solid var(--mp-border);
-}
-input::placeholder, textarea::placeholder{
-  color: rgba(229,231,235,.55);
-}
-
