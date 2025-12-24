@@ -347,3 +347,15 @@ body {
     padding-top: 3.5rem;
   }
 }
+.release-section h2 {
+  color: #ffffff;
+}
+.release-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #2563EB;
+  margin-top: 12px;
+}
+
