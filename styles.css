@@ -358,4 +358,7 @@ body {
   background: #2563EB;
   margin-top: 12px;
 }
+.release-checks li::before {
+  color: #2563EB;
+}
 
