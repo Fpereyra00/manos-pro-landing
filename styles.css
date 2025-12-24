@@ -59,12 +59,12 @@ body {
 }
 
 .nav-links a:hover {
-  color: #facc15;
+  color: #9CA3AF;
 }
 
 .nav-cta {
   border-radius: 999px;
-  border: 1px solid #facc15;
+  border: 1px solid #9CA3AF;
 }
 
 /* HERO */
@@ -126,7 +126,7 @@ body {
 }
 
 .btn-primary {
-  background: #facc15;
+  background: #9CA3AF;
   color: #111827;
 }
 
@@ -268,7 +268,7 @@ body {
 #lead-form select:focus,
 #lead-form textarea:focus {
   outline: none;
-  border-color: #facc15;
+  border-color: #9CA3AF;
   box-shadow: 0 0 0 1px #facc1544;
 }
 
