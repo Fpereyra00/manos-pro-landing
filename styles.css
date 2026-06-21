@@ -403,6 +403,13 @@ body {
 
 }
 
+.team-card:hover{
+
+    transform: translateY(-8px);
+
+    transition: .35s ease;
+
+}
 /* FRANCISCO */
 
 .francisco img{
