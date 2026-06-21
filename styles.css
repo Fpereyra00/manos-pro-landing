@@ -429,10 +429,15 @@ body {
 /* CONTENIDO */
 
 .team-content {
-    padding: 30px;
+
+    padding: 32px;
+
     display: flex;
+
     flex-direction: column;
-    flex-grow: 1;
+
+    justify-content: flex-start;
+
 }
 
 .team-content h3 {
@@ -454,7 +459,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .team-tags span {
@@ -469,12 +474,14 @@ body {
 /* TEXTO */
 
 .team-content p {
-    color: #6b7280;
-    line-height: 1.8;
-    font-size: 15px;
-    margin-top: auto;
-}
 
+    margin: 0;
+
+    color: #5f6b7a;
+
+    line-height: 1.9;
+
+}
 /* MENSAJE FINAL */
 
 .team-footer-message {
