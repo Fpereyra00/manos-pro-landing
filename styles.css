@@ -312,7 +312,7 @@ body {
 
 .team-section {
     padding: 120px 20px;
-    background: #fafbfc;
+    background: #white;
 }
 
 .team-section .container {
@@ -380,7 +380,7 @@ body {
 }
 
 .team-image{
-    height:340px;
+    height:320px;
     overflow:hidden;
 }
 
@@ -407,7 +407,7 @@ body {
 
 .francisco img{
 
-    object-position:center 5%;
+    object-position:center 2%;
 
 }
 
@@ -415,7 +415,7 @@ body {
 
 .diego img{
 
-    object-position:center 18%;
+    object-position:center 10%;
 
 }
 
@@ -425,8 +425,9 @@ body {
 
     object-position:center 12%;
 
-}
+    transform:scale(.92);
 
+}
 /* CONTENIDO */
 
 .team-content {
