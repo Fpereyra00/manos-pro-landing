@@ -407,7 +407,7 @@ body {
 
 .francisco img{
 
-    object-position:center 2%;
+    object-position:center 8%;
 
 }
 
@@ -423,9 +423,7 @@ body {
 
 .agustin img{
 
-    object-position:center 12%;
-
-    transform:scale(.92);
+    object-position:center 12%;);
 
 }
 /* CONTENIDO */
