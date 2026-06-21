@@ -498,3 +498,29 @@ body {
 
     line-height:1.7;
 }
+.team-footer{
+
+    max-width:850px;
+
+    margin:90px auto 0;
+
+    text-align:center;
+}
+
+.team-footer h3{
+
+    font-size:32px;
+
+    color:#111827;
+
+    margin-bottom:20px;
+}
+
+.team-footer p{
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    font-size:18px;
+}
