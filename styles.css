@@ -555,3 +555,189 @@ body {
     }
 
 }
+
+/* =========================================
+   INSTRUCTIVO IOS - MANOS PRO
+   ========================================= */
+
+.ios-guide {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+.ios-guide-header {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.ios-guide-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.ios-guide-header h2 {
+    margin-bottom: 18px;
+}
+
+.ios-guide-header p {
+    margin: 8px auto;
+    max-width: 800px;
+}
+
+
+/* GRID DE PASOS */
+
+.ios-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+
+/* TARJETA */
+
+.ios-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 22px 18px 25px;
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 18px;
+
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.ios-step:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* NÚMERO */
+
+.ios-step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background: #2454c6;
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* IMÁGENES */
+
+.ios-step img {
+    display: block;
+
+    width: 100%;
+    max-width: 210px;
+    height: auto;
+
+    margin: 0 auto 20px;
+
+    border-radius: 14px;
+}
+
+
+/* TÍTULO */
+
+.ios-step h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+}
+
+
+/* TEXTO */
+
+.ios-step p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+
+/* RESULTADO FINAL */
+
+.ios-step-final {
+    border-color: rgba(36, 84, 198, 0.55);
+}
+
+.ios-step-final .ios-step-number {
+    background: #2454c6;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .ios-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .ios-guide {
+        padding: 50px 16px;
+    }
+
+    .ios-guide-header {
+        margin-bottom: 35px;
+    }
+
+    .ios-guide-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .ios-steps {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .ios-step {
+        padding: 22px 18px 28px;
+    }
+
+    .ios-step img {
+        max-width: 280px;
+    }
+
+}
